@@ -40,17 +40,17 @@ class DetailActivity : AppCompatActivity() {
         // Configuración del ViewPager2 (adaptador y contenido)
         val customers = listOf(
             Customer(
-                "Aleix Cruz",
+                "Víctor Santiago",
                 "https://upload.wikimedia.org/wikipedia/commons/d/d7/Commons_QR_code.png",
                 "https://cdn-icons-png.flaticon.com/512/3065/3065699.png"
             ),
             Customer(
-                "Belén Cerezo",
+                "Lucía Carbajo",
                 "https://boofcv.org/images/thumb/b/bb/Example_render_microqr.png/400px-Example_render_microqr.png",
                 "https://www.iconarchive.com/download/i141851/iconarchive/cute-animal/Cute-Monkey.1024.png"
             ),
             Customer(
-                "Víctor Santiago",
+                "Nova Santiago Carbajo",
                 "https://raw.githubusercontent.com/kozakdenys/qr-code-styling/master/src/assets/qr_code_example.png",
                 "https://cdn-icons-png.flaticon.com/128/427/427544.png"
             )
