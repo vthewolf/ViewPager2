@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.myapplication.databinding.ActivityDetailBinding
+import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -51,7 +52,8 @@ class DetailActivity : AppCompatActivity() {
             )
         )
         binding.viewPager.adapter = MyViewPagerAdapter(customers)
-        binding.wormDotsIndicator.attachTo(binding.viewPager)
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { _, _ -> }.attach()
+
     }
 
     private fun refreshData() {
