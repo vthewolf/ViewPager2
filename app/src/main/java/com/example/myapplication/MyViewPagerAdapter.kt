@@ -15,7 +15,6 @@ class MyViewPagerAdapter(private val customers: List<Customer>) :
         fun bind(customer: Customer) {
             binding.textViewCustomerName.text = customer.name
             Glide.with(binding.root.context).load(customer.imageUrl).into(binding.imageViewCustomer)
-            Glide.with(binding.root.context).load(customer.status).into(binding.status)
         }
     }
 
